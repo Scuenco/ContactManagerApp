@@ -6,7 +6,8 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-G3G7OsJCbOk1USkOY4RfeX1z27YaWrZ1YuaQ5tbuawed9IoreRDpWpTkZLXQfPm3" crossorigin="anonymous">
+    <link rel="stylesheet" href="contact.css">
   </head>
   <body>
     <div class="container">
@@ -31,22 +32,42 @@
               <h4 class="modal-title">Edit Contact</h4>
             </div>
             <div class="modal-body">
-              <form>
+              <form class="form-horizontal">
                 <div class="form-group">
-                  <label for="fname">Firstname:</label>
-                  <input type="text" id="fname" class="form-control">
+                  <label for="fname" class="col-xs-3 control-label">Firstname:</label>
+                  <div class="col-xs-8">
+                    <input type="text" id="fname" class="form-control">
+                  </div>
+                  <div class="col-xs-1">
+                    <span class="asterisk" id="invalidFname">*</span>
+                  </div>
                 </div>
                 <div class="form-group">
-                  <label for="lname">Lastname:</label>
-                  <input type="text" id="lname" class="form-control">
+                  <label for="lname" class="col-xs-3 control-label">Lastname:</label>
+                  <div class="col-xs-8">
+                    <input type="text" id="lname" class="form-control">
+                  </div>
+                  <div class="col-xs-1">
+                    <span class="asterisk" id="invalidLname">*</span>
+                  </div>
                 </div>
                 <div class="form-group">
-                  <label for="phone">Phone:</label>
-                  <input type="text" id="phone" class="form-control">
+                  <label for="phone" class="col-xs-3 control-label">Phone:</label>
+                  <div class="col-xs-8">
+                    <input type="text" id="phone" class="form-control">
+                  </div>
+                    <div class="col-xs-1">
+                  <span class="asterisk" id="invalidPhone">*</span>
+                  </div>
                 </div>
                 <div class="form-group">
-                  <label for="email">Email:</label>
-                  <input type="text" id="email" class="form-control">
+                  <label for="email" class="col-xs-3 control-label">Email:</label>
+                  <div class="col-xs-8">
+                    <input type="text" id="email" class="form-control">
+                  </div>
+                  <div class="col-xs-1">
+                    <span class="asterisk" id="invalidEmail">*</span>
+                  </div>
                 </div>
               </form>
             <div class="modal-footer">
